@@ -40,7 +40,7 @@ public class TokenService {
         try {
             var algoritmo = Algorithm.HMAC256(secret);
             return JWT.require(algoritmo)
-                    .withIssuer("API Voll.med")
+            .withIssuer("API devout.catholic")
                     .build()
                     .verify(tokenJWT)
                     .getSubject();
