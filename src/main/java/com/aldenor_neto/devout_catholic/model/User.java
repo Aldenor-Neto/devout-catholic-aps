@@ -33,9 +33,15 @@ public class User implements UserDetails {
 
     private String senha;
 
+    public User(String nome, String email, String senha) {
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-            return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+        return List.of(new SimpleGrantedAuthority("ROLE_USER"));
     }
 
     @Override
