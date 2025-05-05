@@ -20,7 +20,7 @@ public class UserService {
     private PasswordEncoder passwordEncoder;
 
     @Transactional
-    public void userSignUp(UserRegistration entity) {
+    public User userSignUp(UserRegistration entity) {
         if (repository.existsByEmail(entity.email())) {
             throw new RuntimeException("E-mail já cadastrado.");
         }
@@ -29,6 +29,6 @@ public class UserService {
 
         var user = new User(entity.name(), entity.email(), senhaCriptografada);
 
-        repository.save(user);
+        return repository.save(user);
     }
 }

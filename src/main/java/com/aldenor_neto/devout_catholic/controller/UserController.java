@@ -7,6 +7,8 @@ import com.aldenor_neto.devout_catholic.model.DTO.DadosTokenJwt;
 import com.aldenor_neto.devout_catholic.model.DTO.UserRegistration;
 import com.aldenor_neto.devout_catholic.services.UserService;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -40,7 +42,11 @@ public class UserController {
 
     @PostMapping("/register")
     public ResponseEntity<?> registrarUsuario(@RequestBody UserRegistration newUser) {
-        service.userSignUp(newUser);
-        return ResponseEntity.status(HttpStatus.CREATED).body("Usuario criado com sucesso");
+        User user = service.userSignUp(newUser);
+
+        return ResponseEntity.status(HttpStatus.CREATED).body(Map.of(
+                "mensagem", "Usuario criado com sucesso!",
+                "nome", user.getNome(),
+                "email", user.getEmail()));
     }
 }
