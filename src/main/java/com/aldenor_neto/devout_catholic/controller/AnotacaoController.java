@@ -15,6 +15,7 @@ import com.aldenor_neto.devout_catholic.services.AnotacaoService;
 
 @RestController 
 @RequestMapping("/anotacoes")
+@CrossOrigin(origins = "*")
 public class AnotacaoController {
 
     @Autowired
