@@ -32,7 +32,7 @@ public class SecurityConfigurations {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource())) // <- Habilita CORS aqui
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(req -> {
-                    req.requestMatchers(HttpMethod.POST, "/login/**").permitAll();
+                    req.requestMatchers(HttpMethod.POST, "/login", "/login/**").permitAll();
                     req.anyRequest().authenticated();
                 })
                 .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)
@@ -49,11 +49,13 @@ public class SecurityConfigurations {
         return new BCryptPasswordEncoder();
     }
 
-    // ⚠️ ESSA CONFIGURAÇÃO AQUI É FUNDAMENTAL PARA O CORS FUNCIONAR
     @Bean
     public UrlBasedCorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(Arrays.asList("http://localhost:8081", "http://192.168.100.21:8081"));
+        config.setAllowedOrigins(Arrays.asList(
+                "http://localhost:4200",
+                "http://localhost:8081",
+                "http://192.168.100.21:8081"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(Arrays.asList("*"));
         config.setAllowCredentials(true);
