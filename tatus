@@ -1,0 +1,53 @@
+[33mcommit b952b815a4a39fd3effa745e102e8c1b03ea249d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: aldenor-neto <aldenor05062010@gmail.com>
+Date:   Thu May 15 17:55:50 2025 -0300
+
+    ajuste na funcionalidade biblia
+
+[33mcommit 5e11c1cdc2ec2541ba0e33f454b5e0e271f598e8[m
+Author: aldenor-neto <aldenor05062010@gmail.com>
+Date:   Tue May 6 20:24:05 2025 -0300
+
+    add cossOrigin
+
+[33mcommit d695e36aaa17b9233dabb7288fa393630624b64f[m
+Author: aldenor-neto <aldenor05062010@gmail.com>
+Date:   Mon May 5 18:57:31 2025 -0300
+
+    created annotation
+
+[33mcommit 5a796e9737ecf2e3cb055e74d79d6e0a842c0c86[m
+Author: aldenor-neto <aldenor05062010@gmail.com>
+Date:   Fri Apr 11 20:50:55 2025 -0300
+
+    insert CrossOrigin
+
+[33mcommit 31d67726e008d0bef6fa7efeee361fdfdf2e0662[m
+Author: aldenor-neto <aldenor05062010@gmail.com>
+Date:   Thu Apr 10 22:11:01 2025 -0300
+
+    created register user
+
+[33mcommit 420dc6dcdc2d5257b009cac5b4c90fb41523b26d[m
+Author: aldenor-neto <aldenor05062010@gmail.com>
+Date:   Thu Apr 10 18:27:40 2025 -0300
+
+    ajuste em autenticacao
+
+[33mcommit bd20e1fbc58505f684ff8d218864a4ad1ee86397[m
+Author: aldenor-neto <aldenor05062010@gmail.com>
+Date:   Thu Apr 10 17:22:31 2025 -0300
+
+    created authorization
+
+[33mcommit f954eb126f349492c572d98002970bc0fd7138eb[m
+Author: aldenor-neto <aldenor05062010@gmail.com>
+Date:   Wed Apr 9 15:38:43 2025 -0300
+
+    generation token
+
+[33mcommit 8b233ea89ebefe70b06d187d73631856434d05e9[m
+Author: aldenor-neto <aldenor05062010@gmail.com>
+Date:   Wed Apr 9 14:26:08 2025 -0300
+
+    create login e authetication

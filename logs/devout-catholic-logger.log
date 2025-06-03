@@ -1,0 +1,51 @@
+2025-06-03 09:04:56,158 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 15316 (C:\Users\alden\Desktop\Nova pasta\v1 - Angular\devout_catholic\target\classes started by alden in C:\Users\alden\Desktop\Nova pasta\v1 - Angular\devout_catholic)
+2025-06-03 09:04:56,161 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-06-03 09:04:56,161 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-03 09:04:56,192 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-03 09:04:56,194 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-03 09:04:56,738 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-03 09:04:56,784 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2025-06-03 09:04:57,192 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-03 09:04:57,202 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-03 09:04:57,204 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-03 09:04:57,204 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-06-03 09:04:57,239 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-03 09:04:57,240 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1045 ms
+2025-06-03 09:04:57,391 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-03 09:04:57,517 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a3114b7
+2025-06-03 09:04:57,519 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-03 09:04:57,547 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-03 09:04:57,587 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.022s)
+2025-06-03 09:04:57,632 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-03 09:04:57,634 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-03 09:04:57,705 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-03 09:04:57,743 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-06-03 09:04:57,768 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-03 09:04:57,965 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-03 09:04:58,023 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [restartedMain] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.1
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-03 09:04:58,571 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-03 09:04:58,573 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-03 09:04:58,793 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-03 09:04:58,853 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [restartedMain] Global AuthenticationManager configured with UserDetailsService bean with name authenticationService
+2025-06-03 09:04:58,937 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-03 09:04:59,143 INFO o.s.v.b.OptionalValidatorFactoryBean [restartedMain] Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-06-03 09:04:59,290 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-03 09:04:59,307 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-03 09:04:59,320 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2025-06-03 09:04:59,326 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.526 seconds (process running for 3.822)
+2025-06-03 09:53:26,217 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-03 09:53:26,218 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-03 09:53:26,219 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-03 09:55:42,459 WARN o.s.w.s.h.AbstractHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.security.authentication.BadCredentialsException: Usuário inexistente ou senha inválida]
+2025-06-03 15:30:51,937 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-03 15:30:51,939 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-06-03 15:30:51,942 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-03 15:30:51,945 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-03 15:30:51,947 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
