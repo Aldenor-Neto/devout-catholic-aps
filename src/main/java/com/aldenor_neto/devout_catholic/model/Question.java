@@ -1,4 +1,4 @@
-package aldenor.devout_catholic.model;
+package com.aldenor_neto.devout_catholic.model;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

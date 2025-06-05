@@ -1,4 +1,4 @@
-package aldenor.devout_catholic.model.liturgia;
+package com.aldenor_neto.devout_catholic.model.liturgia;
 
 import lombok.*;
 

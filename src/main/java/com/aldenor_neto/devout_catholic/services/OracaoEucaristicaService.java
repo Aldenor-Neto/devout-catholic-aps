@@ -1,4 +1,4 @@
-package aldenor.devout_catholic.services;
+package com.aldenor_neto.devout_catholic.services;
 
 import java.io.IOException;
 import java.util.List;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import aldenor.devout_catholic.model.OracaoEucaristica;
+import com.aldenor_neto.devout_catholic.model.OracaoEucaristica;
 
 @Service
 public class OracaoEucaristicaService {

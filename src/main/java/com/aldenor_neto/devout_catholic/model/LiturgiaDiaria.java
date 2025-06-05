@@ -1,8 +1,8 @@
-package aldenor.devout_catholic.model;
+package com.aldenor_neto.devout_catholic.model;
 
-import aldenor.devout_catholic.model.liturgia.Antifonas;
-import aldenor.devout_catholic.model.liturgia.Leitura;
-import aldenor.devout_catholic.model.liturgia.Salmo;
+import com.aldenor_neto.devout_catholic.model.liturgia.Antifonas;
+import com.aldenor_neto.devout_catholic.model.liturgia.Leitura;
+import com.aldenor_neto.devout_catholic.model.liturgia.Salmo;
 import lombok.*;
 
 @Getter

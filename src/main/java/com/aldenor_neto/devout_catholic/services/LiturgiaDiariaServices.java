@@ -1,8 +1,8 @@
-package aldenor.devout_catholic.services;
+package com.aldenor_neto.devout_catholic.services;
 
-import aldenor.devout_catholic.config.WebClientConfig;
-import aldenor.devout_catholic.model.LiturgiaDiaria;
-import aldenor.devout_catholic.model.liturgia.Leitura;
+import com.aldenor_neto.devout_catholic.config.WebClientConfig;
+import com.aldenor_neto.devout_catholic.model.LiturgiaDiaria;
+import com.aldenor_neto.devout_catholic.model.liturgia.Leitura;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 import org.springframework.web.reactive.function.client.WebClient;

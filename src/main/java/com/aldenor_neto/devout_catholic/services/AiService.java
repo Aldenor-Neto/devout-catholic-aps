@@ -1,8 +1,8 @@
-package aldenor.devout_catholic.services;
+package com.aldenor_neto.devout_catholic.services;
 
-import aldenor.devout_catholic.config.WebClientConfig;
-import aldenor.devout_catholic.model.AiRequest;
-import aldenor.devout_catholic.model.AiResponse;
+import com.aldenor_neto.devout_catholic.config.WebClientConfig;
+import com.aldenor_neto.devout_catholic.model.AiRequest;
+import com.aldenor_neto.devout_catholic.model.AiResponse;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;

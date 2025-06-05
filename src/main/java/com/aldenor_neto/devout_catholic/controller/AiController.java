@@ -1,7 +1,7 @@
-package aldenor.devout_catholic.controller;
+package com.aldenor_neto.devout_catholic.controller;
 
-import aldenor.devout_catholic.model.Question;
-import aldenor.devout_catholic.services.AiService;
+import com.aldenor_neto.devout_catholic.model.Question;
+import com.aldenor_neto.devout_catholic.services.AiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

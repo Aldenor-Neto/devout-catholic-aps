@@ -1,4 +1,4 @@
-package aldenor.devout_catholic.config;
+package com.aldenor_neto.devout_catholic.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
