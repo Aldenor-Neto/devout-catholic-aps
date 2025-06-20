@@ -12,6 +12,8 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
 
 @Table(name = "anotacoes")
 @Entity(name = "anotacoes")
@@ -31,5 +33,9 @@ public class Anotacao {
     private LocalDateTime dataCriacao;
 
     private String descricao;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
 }

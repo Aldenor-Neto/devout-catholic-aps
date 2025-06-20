@@ -1,0 +1,7 @@
+2025-06-07 00:00:10,181 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-07 00:00:10,182 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-07 00:00:10,184 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-07 02:05:13,722 INFO c.a.d.c.AiController [http-nio-8080-exec-5] Recebendo requisição para gerar reflexão. Pergunta: Gere um texto motivacional com fundamentação bíblica segundo a igreja católica apostólica romana, use exemplo de santos
+2025-06-07 02:05:18,709 INFO c.a.d.c.AiController [http-nio-8080-exec-5] Reflexão gerada com sucesso
+2025-06-07 02:06:28,979 INFO c.a.d.c.AiController [http-nio-8080-exec-8] Recebendo requisição para gerar reflexão. Pergunta: Segundo a igreja católica apostólica romana qual é o santo que se celebra no dia (07/06)? Qual a sua história e o que a sua vida cristã nos ensina?
+2025-06-07 02:06:34,100 INFO c.a.d.c.AiController [http-nio-8080-exec-8] Reflexão gerada com sucesso

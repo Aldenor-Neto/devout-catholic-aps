@@ -1,0 +1,944 @@
+2025-06-05 11:26:18,546 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:26:18,593 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 9812 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:26:18,593 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:26:18,594 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:26:18,632 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:26:18,632 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:26:19,281 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:26:19,418 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 131 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:26:19,907 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:26:19,916 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:26:19,919 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:26:19,919 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:26:19,963 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:26:19,965 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1330 ms
+2025-06-05 11:26:20,131 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:26:20,307 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2e8e6164
+2025-06-05 11:26:20,309 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:26:20,349 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:26:20,442 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.041s)
+2025-06-05 11:26:20,451 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:26:20,455 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:26:20,533 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:26:20,595 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:26:20,629 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:26:20,831 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:26:21,551 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:26:21,553 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:26:21,813 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:26:21,826 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientConfig' defined in file [C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes\com\aldenor_neto\devout_catholic\config\WebClientConfig.class]: Failed to instantiate [com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+2025-06-05 11:26:21,827 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:26:21,829 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2025-06-05 11:26:21,831 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2025-06-05 11:26:21,833 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2025-06-05 11:26:21,844 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-05 11:26:21,858 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientConfig' defined in file [C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes\com\aldenor_neto\devout_catholic\config\WebClientConfig.class]: Failed to instantiate [com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1317)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.aldenor_neto.devout_catholic.DevoutCatholicApplication.main(DevoutCatholicApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The declared package "aldenor.devout_catholic.config" does not match the expected package "com.aldenor_neto.devout_catholic.config"
+
+	at com.aldenor_neto.devout_catholic.config.WebClientConfig.<init>(WebClientConfig.java:1)
+	at com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0.<init>(<generated>)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197)
+	... 22 common frames omitted
+2025-06-05 11:27:20,272 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:27:20,302 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 5940 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:27:20,302 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:27:20,303 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:27:20,332 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:27:20,332 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:27:20,884 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:27:20,983 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:27:21,395 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:27:21,404 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:27:21,405 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:27:21,406 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:27:21,443 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:27:21,444 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1110 ms
+2025-06-05 11:27:21,587 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:27:21,703 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@333496c2
+2025-06-05 11:27:21,704 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:27:21,724 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:27:21,758 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.021s)
+2025-06-05 11:27:21,801 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:27:21,802 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:27:21,870 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:27:21,912 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:27:21,937 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:27:22,101 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:27:22,710 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:27:22,713 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:27:22,920 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:27:22,931 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientConfig' defined in file [C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes\com\aldenor_neto\devout_catholic\config\WebClientConfig.class]: Failed to instantiate [com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+2025-06-05 11:27:22,931 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:27:22,933 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2025-06-05 11:27:22,935 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2025-06-05 11:27:22,939 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2025-06-05 11:27:22,947 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-05 11:27:22,963 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientConfig' defined in file [C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes\com\aldenor_neto\devout_catholic\config\WebClientConfig.class]: Failed to instantiate [com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1317)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.aldenor_neto.devout_catholic.DevoutCatholicApplication.main(DevoutCatholicApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The declared package "aldenor.devout_catholic.config" does not match the expected package "com.aldenor_neto.devout_catholic.config"
+
+	at com.aldenor_neto.devout_catholic.config.WebClientConfig.<init>(WebClientConfig.java:1)
+	at com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0.<init>(<generated>)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197)
+	... 22 common frames omitted
+2025-06-05 11:28:21,287 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:28:21,311 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 9352 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:28:21,312 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:28:21,312 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:28:21,350 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:28:21,350 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:28:21,971 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:28:22,080 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 103 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:28:22,533 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:28:22,541 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:28:22,543 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:28:22,544 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:28:22,583 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:28:22,583 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1233 ms
+2025-06-05 11:28:22,741 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:28:22,862 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a53bf25
+2025-06-05 11:28:22,864 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:28:22,884 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:28:22,920 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.023s)
+2025-06-05 11:28:22,965 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:28:22,967 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:28:23,037 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:28:23,083 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:28:23,110 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:28:23,304 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:28:24,001 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:28:24,004 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:28:24,239 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:28:24,250 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientConfig' defined in file [C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes\com\aldenor_neto\devout_catholic\config\WebClientConfig.class]: Failed to instantiate [com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+2025-06-05 11:28:24,251 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:28:24,253 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2025-06-05 11:28:24,256 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2025-06-05 11:28:24,259 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2025-06-05 11:28:24,267 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-05 11:28:24,283 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientConfig' defined in file [C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes\com\aldenor_neto\devout_catholic\config\WebClientConfig.class]: Failed to instantiate [com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1317)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.aldenor_neto.devout_catholic.DevoutCatholicApplication.main(DevoutCatholicApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:88)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1311)
+	... 20 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The declared package "aldenor.devout_catholic.config" does not match the expected package "com.aldenor_neto.devout_catholic.config"
+
+	at com.aldenor_neto.devout_catholic.config.WebClientConfig.<init>(WebClientConfig.java:1)
+	at com.aldenor_neto.devout_catholic.config.WebClientConfig$$SpringCGLIB$$0.<init>(<generated>)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197)
+	... 22 common frames omitted
+2025-06-05 11:36:10,465 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:36:10,495 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 1320 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:36:10,496 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:36:10,497 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:36:10,526 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:36:10,526 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:36:11,115 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:36:11,219 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:36:11,660 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:36:11,669 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:36:11,671 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:36:11,671 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:36:11,706 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:36:11,708 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1180 ms
+2025-06-05 11:36:11,857 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:36:11,986 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@176900bf
+2025-06-05 11:36:11,988 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:36:12,009 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:36:12,043 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.021s)
+2025-06-05 11:36:12,085 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:36:12,087 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:36:12,148 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:36:12,188 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:36:12,213 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:36:12,381 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:36:13,008 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:36:13,011 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:36:13,238 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:36:13,248 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aiController': Lookup method resolution failed
+2025-06-05 11:36:13,249 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:36:13,251 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2025-06-05 11:36:13,253 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2025-06-05 11:36:13,256 INFO o.a.j.l.DirectJDKLog [restartedMain] Stopping service [Tomcat]
+2025-06-05 11:36:13,265 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-05 11:36:13,278 ERROR o.s.b.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'aiController': Lookup method resolution failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:367)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1294)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:959)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.aldenor_neto.devout_catholic.DevoutCatholicApplication.main(DevoutCatholicApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.aldenor_neto.devout_catholic.controller.AiController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@30f995b6]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:483)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:320)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.checkLookupMethods(AutowiredAnnotationBeanPostProcessor.java:475)
+	... 22 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Question
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3578)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2676)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:465)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Question
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:534)
+	at java.base/java.lang.Class.forName(Class.java:513)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:121)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 28 common frames omitted
+2025-06-05 11:46:06,878 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:46:06,908 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 7608 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:46:06,908 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:46:06,909 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:46:06,938 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:46:06,938 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:46:07,508 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:46:07,613 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 100 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:46:08,050 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:46:08,057 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:46:08,058 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:46:08,059 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:46:08,098 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:46:08,099 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1159 ms
+2025-06-05 11:46:08,252 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:46:08,379 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@55929af
+2025-06-05 11:46:08,381 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:46:08,401 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:46:08,435 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.021s)
+2025-06-05 11:46:08,477 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:46:08,480 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:46:08,540 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:46:08,582 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:46:08,614 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:46:08,796 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:46:09,450 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:46:09,453 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:46:09,680 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:46:09,853 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 11:46:10,051 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@eb94885, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3105996d, org.springframework.security.web.context.SecurityContextHolderFilter@6cfdccb6, org.springframework.security.web.header.HeaderWriterFilter@5dd177ce, org.springframework.web.filter.CorsFilter@7b0511d0, org.springframework.security.web.authentication.logout.LogoutFilter@20604391, com.aldenor_neto.devout_catholic.config.SecurityFilter@5052f960, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58caf7eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35a7ad54, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@23ae75, org.springframework.security.web.session.SessionManagementFilter@7b06a7c2, org.springframework.security.web.access.ExceptionTranslationFilter@29ca96ed, org.springframework.security.web.access.intercept.AuthorizationFilter@5a9cb3ec]
+2025-06-05 11:46:10,316 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 11:46:10,325 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:46:10,339 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 11:46:10,346 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.783 seconds (process running for 4.125)
+2025-06-05 11:46:46,267 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:46:46,290 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 12312 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:46:46,290 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:46:46,291 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:46:46,319 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:46:46,320 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:46:46,981 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:46:47,106 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 118 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:46:47,568 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:46:47,576 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:46:47,577 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:46:47,577 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:46:47,619 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:46:47,619 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1299 ms
+2025-06-05 11:46:47,784 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:46:47,914 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@53fb3912
+2025-06-05 11:46:47,915 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:46:47,937 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:46:47,975 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.023s)
+2025-06-05 11:46:48,020 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:46:48,022 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:46:48,097 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:46:48,147 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:46:48,176 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:46:48,376 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:46:49,090 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:46:49,093 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:46:49,339 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:46:49,517 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 11:46:49,749 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d105620, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11108142, org.springframework.security.web.context.SecurityContextHolderFilter@7008b59b, org.springframework.security.web.header.HeaderWriterFilter@3d82ad69, org.springframework.web.filter.CorsFilter@722d1d59, org.springframework.security.web.authentication.logout.LogoutFilter@3f936faf, com.aldenor_neto.devout_catholic.config.SecurityFilter@793dc204, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d15f8ef, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6144cc12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@498c293e, org.springframework.security.web.session.SessionManagementFilter@5a688a53, org.springframework.security.web.access.ExceptionTranslationFilter@4ad03ab0, org.springframework.security.web.access.intercept.AuthorizationFilter@244b16e6]
+2025-06-05 11:46:50,024 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2025-06-05 11:46:50,041 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:46:50,060 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-05 11:46:50,062 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:46:50,065 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2025-06-05 11:46:50,069 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2025-06-05 11:46:50,079 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-05 11:46:50,094 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-06-05 11:52:50,752 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:52:50,779 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 7248 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:52:50,780 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:52:50,780 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:52:50,814 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:52:50,814 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:52:51,467 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:52:51,577 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 104 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:52:52,039 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:52:52,046 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:52:52,048 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:52:52,048 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:52:52,086 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:52:52,086 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1272 ms
+2025-06-05 11:52:52,254 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:52:52,379 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1d62a39
+2025-06-05 11:52:52,380 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:52:52,400 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:52:52,439 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.025s)
+2025-06-05 11:52:52,483 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:52:52,485 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:52:52,551 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:52:52,593 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:52:52,619 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:52:52,801 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:52:53,583 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:52:53,585 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:52:53,841 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:52:54,026 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 11:52:54,233 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@45fcca33, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@244b16e6, org.springframework.security.web.context.SecurityContextHolderFilter@41988594, org.springframework.security.web.header.HeaderWriterFilter@31b7a33a, org.springframework.web.filter.CorsFilter@b1d1869, org.springframework.security.web.authentication.logout.LogoutFilter@7040ece3, com.aldenor_neto.devout_catholic.config.SecurityFilter@eb91acc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63aa041d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75b92a9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e1eb082, org.springframework.security.web.session.SessionManagementFilter@628f3c88, org.springframework.security.web.access.ExceptionTranslationFilter@1c26f268, org.springframework.security.web.access.intercept.AuthorizationFilter@6f41c2e8]
+2025-06-05 11:52:54,504 WARN o.s.b.d.a.OptionalLiveReloadServer [restartedMain] Unable to start LiveReload server
+2025-06-05 11:52:54,520 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:52:54,533 WARN o.s.c.s.AbstractApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-05 11:52:54,536 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:52:54,538 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown initiated...
+2025-06-05 11:52:54,541 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Shutdown completed.
+2025-06-05 11:52:54,551 INFO o.s.b.a.l.ConditionEvaluationReportLogger [restartedMain] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-05 11:52:54,565 ERROR o.s.b.d.LoggingFailureAnalysisReporter [restartedMain] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-06-05 11:57:01,201 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:57:01,237 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 14608 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:57:01,237 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:57:01,238 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:57:01,280 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:57:01,280 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:57:02,166 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:57:02,280 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 107 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:57:03,021 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:57:03,032 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:57:03,034 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:57:03,034 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:57:03,081 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:57:03,082 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1801 ms
+2025-06-05 11:57:03,438 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:57:03,720 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4fa22fd1
+2025-06-05 11:57:03,723 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:57:03,757 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:57:03,807 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.032s)
+2025-06-05 11:57:03,864 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:57:03,873 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:57:04,018 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:57:04,082 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:57:04,116 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:57:04,298 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:57:04,996 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:57:04,999 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:57:05,359 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:57:05,739 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 11:57:06,067 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11ff101, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b87b795, org.springframework.security.web.context.SecurityContextHolderFilter@3673f4a7, org.springframework.security.web.header.HeaderWriterFilter@745e9d92, org.springframework.web.filter.CorsFilter@60a1b924, org.springframework.security.web.authentication.logout.LogoutFilter@743eadbf, com.aldenor_neto.devout_catholic.config.SecurityFilter@6ef47eaf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31062e71, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e33f0bf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@302dc142, org.springframework.security.web.session.SessionManagementFilter@2f56f875, org.springframework.security.web.access.ExceptionTranslationFilter@4311df90, org.springframework.security.web.access.intercept.AuthorizationFilter@9546cc3]
+2025-06-05 11:57:06,543 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 11:57:06,559 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:57:06,577 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 11:57:06,588 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 5.751 seconds (process running for 6.263)
+2025-06-05 11:57:37,273 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:57:37,297 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 15684 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:57:37,297 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:57:37,298 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:57:37,328 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:57:37,328 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:57:37,981 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:57:38,096 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 108 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:57:38,559 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:57:38,567 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:57:38,569 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:57:38,569 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:57:38,608 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:57:38,609 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1279 ms
+2025-06-05 11:57:38,774 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:57:38,898 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15d29bd0
+2025-06-05 11:57:38,899 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:57:38,918 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:57:38,954 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.022s)
+2025-06-05 11:57:38,998 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:57:38,999 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:57:39,070 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:57:39,115 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:57:39,146 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:57:39,343 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:57:40,061 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:57:40,064 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:57:40,306 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:57:40,476 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 11:57:40,692 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@142a4512, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53cbadea, org.springframework.security.web.context.SecurityContextHolderFilter@6698fd93, org.springframework.security.web.header.HeaderWriterFilter@231edf10, org.springframework.web.filter.CorsFilter@6706c16, org.springframework.security.web.authentication.logout.LogoutFilter@579af3e9, com.aldenor_neto.devout_catholic.config.SecurityFilter@4a75412b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cfb3199, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@638b1e6a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22ba8560, org.springframework.security.web.session.SessionManagementFilter@31a07614, org.springframework.security.web.access.ExceptionTranslationFilter@73fe97d0, org.springframework.security.web.access.intercept.AuthorizationFilter@7d075421]
+2025-06-05 11:57:40,974 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 11:57:40,991 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:57:41,004 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 11:57:41,011 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 4.07 seconds (process running for 4.697)
+2025-06-05 11:57:57,358 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:57:57,359 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 11:57:57,363 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 11:58:31,693 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:58:31,718 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 13068 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:58:31,719 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:58:31,719 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:58:31,751 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:58:31,752 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:58:32,371 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:58:32,477 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 101 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:58:32,917 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:58:32,925 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:58:32,926 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:58:32,926 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:58:32,964 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:58:32,964 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1212 ms
+2025-06-05 11:58:33,127 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:58:33,245 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@47a8d441
+2025-06-05 11:58:33,246 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:58:33,266 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:58:33,303 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.024s)
+2025-06-05 11:58:33,445 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:58:33,446 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:58:33,509 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:58:33,554 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:58:33,579 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:58:33,768 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:58:34,466 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:58:34,470 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:58:34,709 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:58:34,879 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 11:58:35,078 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6181e5fa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76bbc25c, org.springframework.security.web.context.SecurityContextHolderFilter@3252f817, org.springframework.security.web.header.HeaderWriterFilter@23e2dc70, org.springframework.web.filter.CorsFilter@5c3e0851, org.springframework.security.web.authentication.logout.LogoutFilter@20f953, com.aldenor_neto.devout_catholic.config.SecurityFilter@12afba93, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78ce662e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@19da469e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@404a8225, org.springframework.security.web.session.SessionManagementFilter@1f8aad80, org.springframework.security.web.access.ExceptionTranslationFilter@178fa9c0, org.springframework.security.web.access.intercept.AuthorizationFilter@7f9d0610]
+2025-06-05 11:58:35,333 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 11:58:35,349 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:58:35,363 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 11:58:35,370 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.988 seconds (process running for 4.503)
+2025-06-05 11:58:46,171 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:58:46,173 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 11:58:46,174 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 11:59:10,384 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 11:59:10,413 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 2228 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 11:59:10,413 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 11:59:10,414 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 11:59:10,445 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 11:59:10,446 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 11:59:11,015 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 11:59:11,114 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 93 ms. Found 2 JPA repository interfaces.
+2025-06-05 11:59:11,525 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 11:59:11,533 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:59:11,535 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 11:59:11,535 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 11:59:11,572 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 11:59:11,573 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1126 ms
+2025-06-05 11:59:11,712 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 11:59:11,830 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49ee1eaa
+2025-06-05 11:59:11,832 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 11:59:11,855 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 11:59:11,890 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.021s)
+2025-06-05 11:59:11,931 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 11:59:11,934 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 11:59:11,990 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 11:59:12,033 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 11:59:12,060 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 11:59:12,220 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 11:59:12,842 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 11:59:12,845 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:59:13,064 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 11:59:13,228 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 11:59:13,405 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f845cf1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@218b6596, org.springframework.security.web.context.SecurityContextHolderFilter@4b9a71da, org.springframework.security.web.header.HeaderWriterFilter@5f32eb1e, org.springframework.web.filter.CorsFilter@412d6461, org.springframework.security.web.authentication.logout.LogoutFilter@33f22c02, com.aldenor_neto.devout_catholic.config.SecurityFilter@1e564daa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@436fac21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69dd50af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b64de6d, org.springframework.security.web.session.SessionManagementFilter@7b509e8e, org.springframework.security.web.access.ExceptionTranslationFilter@331dc6ce, org.springframework.security.web.access.intercept.AuthorizationFilter@31ebe146]
+2025-06-05 11:59:13,651 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 11:59:13,664 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 11:59:13,676 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 11:59:13,682 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.595 seconds (process running for 3.898)
+2025-06-05 11:59:31,068 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 11:59:31,070 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 11:59:31,072 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 12:17:41,699 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 12:17:41,729 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 13160 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 12:17:41,730 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 12:17:41,730 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 12:17:41,760 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 12:17:41,760 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 12:17:42,326 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 12:17:42,427 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 95 ms. Found 2 JPA repository interfaces.
+2025-06-05 12:17:42,846 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 12:17:42,853 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 12:17:42,855 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 12:17:42,856 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 12:17:42,893 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 12:17:42,894 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1132 ms
+2025-06-05 12:17:43,038 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 12:17:43,156 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@67b8f67c
+2025-06-05 12:17:43,157 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 12:17:43,177 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 12:17:43,213 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.022s)
+2025-06-05 12:17:43,259 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 12:17:43,261 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 12:17:43,327 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 12:17:43,369 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 12:17:43,393 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 12:17:43,557 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 12:17:44,170 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 12:17:44,172 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 12:17:44,382 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 12:17:44,533 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 12:17:44,721 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@267e8928, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42b5a6aa, org.springframework.security.web.context.SecurityContextHolderFilter@3dc2eabd, org.springframework.security.web.header.HeaderWriterFilter@3467b0e0, org.springframework.web.filter.CorsFilter@1b984abd, org.springframework.security.web.authentication.logout.LogoutFilter@2f94c7f5, com.aldenor_neto.devout_catholic.config.SecurityFilter@1bee2b7f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e0008ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d1c838b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3946ee94, org.springframework.security.web.session.SessionManagementFilter@229ce45b, org.springframework.security.web.access.ExceptionTranslationFilter@22ccbebb, org.springframework.security.web.access.intercept.AuthorizationFilter@acddc59]
+2025-06-05 12:17:44,943 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 12:17:44,954 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 12:17:44,966 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 12:17:44,973 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.568 seconds (process running for 3.888)
+2025-06-05 12:18:56,531 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05 12:18:56,531 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-05 12:18:56,532 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-05 12:20:13,584 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 12:20:13,586 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 12:20:13,588 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 12:25:12,906 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 12:25:12,937 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 5372 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 12:25:12,938 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 12:25:12,938 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 12:25:12,967 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 12:25:12,967 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 12:25:13,540 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 12:25:13,645 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+2025-06-05 12:25:14,071 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 12:25:14,078 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 12:25:14,081 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 12:25:14,081 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 12:25:14,116 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 12:25:14,117 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1148 ms
+2025-06-05 12:25:14,257 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 12:25:14,375 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4c16364f
+2025-06-05 12:25:14,377 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 12:25:14,396 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 12:25:14,436 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.026s)
+2025-06-05 12:25:14,575 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 12:25:14,577 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 12:25:14,634 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 12:25:14,674 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 12:25:14,701 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 12:25:14,860 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 12:25:15,487 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 12:25:15,490 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 12:25:15,706 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 12:25:15,860 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 12:25:16,035 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bf94028, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ee7ea21, org.springframework.security.web.context.SecurityContextHolderFilter@715016a2, org.springframework.security.web.header.HeaderWriterFilter@2e6b829d, org.springframework.web.filter.CorsFilter@a913111, org.springframework.security.web.authentication.logout.LogoutFilter@2736e3d3, com.aldenor_neto.devout_catholic.config.SecurityFilter@14564e74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dca840d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@342b8708, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77963f17, org.springframework.security.web.session.SessionManagementFilter@71d1e8ef, org.springframework.security.web.access.ExceptionTranslationFilter@61157081, org.springframework.security.web.access.intercept.AuthorizationFilter@366a7224]
+2025-06-05 12:25:16,270 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 12:25:16,280 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 12:25:16,292 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 12:25:16,298 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.687 seconds (process running for 4.009)
+2025-06-05 12:26:17,998 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05 12:26:17,998 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-05 12:26:18,001 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-05 15:26:15,059 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 15:26:15,061 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 15:26:15,063 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 15:27:38,975 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 15:27:39,006 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 14580 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 15:27:39,007 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 15:27:39,007 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 15:27:39,037 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 15:27:39,037 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 15:27:39,598 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 15:27:39,705 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 98 ms. Found 2 JPA repository interfaces.
+2025-06-05 15:27:40,123 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 15:27:40,130 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 15:27:40,132 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 15:27:40,132 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 15:27:40,169 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 15:27:40,170 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1132 ms
+2025-06-05 15:27:40,311 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 15:27:40,430 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@a22a76c
+2025-06-05 15:27:40,432 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 15:27:40,452 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 15:27:40,486 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.022s)
+2025-06-05 15:27:40,527 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 15:27:40,529 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 15:27:40,592 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 15:27:40,632 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 15:27:40,665 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 15:27:40,831 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 15:27:41,448 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 15:27:41,452 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 15:27:41,669 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 15:27:41,821 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 15:27:41,996 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@c989a25, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@327b9df4, org.springframework.security.web.context.SecurityContextHolderFilter@316a1bd, org.springframework.security.web.header.HeaderWriterFilter@13d22933, org.springframework.web.filter.CorsFilter@682aacd9, org.springframework.security.web.authentication.logout.LogoutFilter@533e94af, com.aldenor_neto.devout_catholic.config.SecurityFilter@5f593dc0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49baefa2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49c3af1e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cd6a2d5, org.springframework.security.web.session.SessionManagementFilter@63d84cd, org.springframework.security.web.access.ExceptionTranslationFilter@245031a6, org.springframework.security.web.access.intercept.AuthorizationFilter@12c59319]
+2025-06-05 15:27:42,226 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 15:27:42,237 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 15:27:42,249 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 15:27:42,255 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.592 seconds (process running for 3.93)
+2025-06-05 15:28:41,161 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05 15:28:41,162 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-05 15:28:41,163 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-05 15:32:09,851 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 15:32:09,853 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 15:32:09,855 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 15:33:24,593 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 15:33:24,622 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 8304 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 15:33:24,622 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 15:33:24,623 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 15:33:24,652 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 15:33:24,653 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 15:33:25,231 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 15:33:25,333 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+2025-06-05 15:33:25,759 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 15:33:25,766 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 15:33:25,767 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 15:33:25,768 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 15:33:25,808 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 15:33:25,809 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1155 ms
+2025-06-05 15:33:25,963 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 15:33:26,084 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74ace088
+2025-06-05 15:33:26,086 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 15:33:26,106 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 15:33:26,143 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.023s)
+2025-06-05 15:33:26,184 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 15:33:26,186 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 15:33:26,261 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 15:33:26,307 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 15:33:26,331 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 15:33:26,494 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 15:33:27,123 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 15:33:27,126 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 15:33:27,336 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 15:33:27,491 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 15:33:27,666 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5599c0b5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13479efa, org.springframework.security.web.context.SecurityContextHolderFilter@1dd73d33, org.springframework.security.web.header.HeaderWriterFilter@4c3bdb76, org.springframework.web.filter.CorsFilter@706cdb70, org.springframework.security.web.authentication.logout.LogoutFilter@66937d21, com.aldenor_neto.devout_catholic.config.SecurityFilter@d2abc6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ab90d31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c60e531, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@72bff245, org.springframework.security.web.session.SessionManagementFilter@44b8eee1, org.springframework.security.web.access.ExceptionTranslationFilter@69dd50af, org.springframework.security.web.access.intercept.AuthorizationFilter@2cfd5ca0]
+2025-06-05 15:33:27,897 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 15:33:27,909 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 15:33:27,920 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 15:33:27,927 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.631 seconds (process running for 3.962)
+2025-06-05 15:33:53,797 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05 15:33:53,797 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-05 15:33:53,798 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-05 15:34:02,819 INFO c.a.d.c.AiController [http-nio-8080-exec-4] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naqueles dias, 30querendo saber com certeza por que Paulo estava sendo acusado pelos judeus, o tribuno soltou-o e mandou reunir os chefes dos sacerdotes e todo o conselho dos anciãos. Depois fez trazer Paulo e colocou-o diante deles.,23, 6Sabendo que uma parte dos presentes eram saduceus e a outra parte eram fariseus, Paulo exclamou no conselho dos anciãos: “Irmãos, eu sou fariseu e filho de fariseus. Estou sendo julgado por causa da nossa esperança na ressurreição dos mortos”. 7Apenas falou isso, armou-se um conflito entre fariseus e saduceus, e a assembleia se dividiu. 8Com efeito, os saduceus dizem que não há ressurreição, nem anjo, nem espírito, enquanto os fariseus sustentam uma coisa e outra. 9Houve, então, uma enorme gritaria. Alguns doutores da Lei, do partido dos fariseus, levantaram-se e começaram a protestar, dizendo: “Não encontramos nenhum mal neste homem. E se um espírito ou anjo tivesse falado com ele?” 10E o conflito crescia cada vez mais. Receando que Paulo fosse despedaçado por eles, o comandante ordenou que os soldados descessem e o tirassem do meio deles, levando-o de novo para o quartel. 11Na noite seguinte, o Senhor aproximou-se de Paulo e lhe disse: “Tem confiança. Assim como tu deste testemunho de mim em Jerusalém, é preciso que tu sejas também minha testemunha em Roma”.
+2025-06-05 15:34:08,319 INFO c.a.d.c.AiController [http-nio-8080-exec-4] Reflexão gerada com sucesso
+2025-06-05 15:39:13,421 INFO c.a.d.c.AiController [http-nio-8080-exec-3] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naqueles dias, 30querendo saber com certeza por que Paulo estava sendo acusado pelos judeus, o tribuno soltou-o e mandou reunir os chefes dos sacerdotes e todo o conselho dos anciãos. Depois fez trazer Paulo e colocou-o diante deles.,23, 6Sabendo que uma parte dos presentes eram saduceus e a outra parte eram fariseus, Paulo exclamou no conselho dos anciãos: “Irmãos, eu sou fariseu e filho de fariseus. Estou sendo julgado por causa da nossa esperança na ressurreição dos mortos”. 7Apenas falou isso, armou-se um conflito entre fariseus e saduceus, e a assembleia se dividiu. 8Com efeito, os saduceus dizem que não há ressurreição, nem anjo, nem espírito, enquanto os fariseus sustentam uma coisa e outra. 9Houve, então, uma enorme gritaria. Alguns doutores da Lei, do partido dos fariseus, levantaram-se e começaram a protestar, dizendo: “Não encontramos nenhum mal neste homem. E se um espírito ou anjo tivesse falado com ele?” 10E o conflito crescia cada vez mais. Receando que Paulo fosse despedaçado por eles, o comandante ordenou que os soldados descessem e o tirassem do meio deles, levando-o de novo para o quartel. 11Na noite seguinte, o Senhor aproximou-se de Paulo e lhe disse: “Tem confiança. Assim como tu deste testemunho de mim em Jerusalém, é preciso que tu sejas também minha testemunha em Roma”.
+2025-06-05 15:39:19,134 INFO c.a.d.c.AiController [http-nio-8080-exec-3] Reflexão gerada com sucesso
+2025-06-05 15:48:06,371 INFO c.a.d.c.AiController [http-nio-8080-exec-7] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naqueles dias, 30querendo saber com certeza por que Paulo estava sendo acusado pelos judeus, o tribuno soltou-o e mandou reunir os chefes dos sacerdotes e todo o conselho dos anciãos. Depois fez trazer Paulo e colocou-o diante deles.,23, 6Sabendo que uma parte dos presentes eram saduceus e a outra parte eram fariseus, Paulo exclamou no conselho dos anciãos: “Irmãos, eu sou fariseu e filho de fariseus. Estou sendo julgado por causa da nossa esperança na ressurreição dos mortos”. 7Apenas falou isso, armou-se um conflito entre fariseus e saduceus, e a assembleia se dividiu. 8Com efeito, os saduceus dizem que não há ressurreição, nem anjo, nem espírito, enquanto os fariseus sustentam uma coisa e outra. 9Houve, então, uma enorme gritaria. Alguns doutores da Lei, do partido dos fariseus, levantaram-se e começaram a protestar, dizendo: “Não encontramos nenhum mal neste homem. E se um espírito ou anjo tivesse falado com ele?” 10E o conflito crescia cada vez mais. Receando que Paulo fosse despedaçado por eles, o comandante ordenou que os soldados descessem e o tirassem do meio deles, levando-o de novo para o quartel. 11Na noite seguinte, o Senhor aproximou-se de Paulo e lhe disse: “Tem confiança. Assim como tu deste testemunho de mim em Jerusalém, é preciso que tu sejas também minha testemunha em Roma”.
+2025-06-05 15:48:11,924 INFO c.a.d.c.AiController [http-nio-8080-exec-7] Reflexão gerada com sucesso
+2025-06-05 15:50:41,823 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 15:50:41,825 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 15:50:41,827 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 15:52:11,738 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 15:52:11,768 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 17244 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 15:52:11,768 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 15:52:11,769 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 15:52:11,801 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 15:52:11,801 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 15:52:12,392 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 15:52:12,494 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 97 ms. Found 2 JPA repository interfaces.
+2025-06-05 15:52:12,921 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 15:52:12,928 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 15:52:12,930 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 15:52:12,930 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 15:52:12,967 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 15:52:12,968 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1165 ms
+2025-06-05 15:52:13,122 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 15:52:13,245 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@75b46d1d
+2025-06-05 15:52:13,247 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 15:52:13,267 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 15:52:13,302 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.022s)
+2025-06-05 15:52:13,344 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 15:52:13,346 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 15:52:13,419 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 15:52:13,461 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 15:52:13,487 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 15:52:13,659 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 15:52:14,292 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 15:52:14,295 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 15:52:14,511 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 15:52:14,667 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 15:52:14,860 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77963f17, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26bfc9cd, org.springframework.security.web.context.SecurityContextHolderFilter@342b8708, org.springframework.security.web.header.HeaderWriterFilter@3691a0dc, org.springframework.web.filter.CorsFilter@67c889d9, org.springframework.security.web.authentication.logout.LogoutFilter@2153b6c4, com.aldenor_neto.devout_catholic.config.SecurityFilter@14564e74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a3f93df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@439c8479, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64522588, org.springframework.security.web.session.SessionManagementFilter@715016a2, org.springframework.security.web.access.ExceptionTranslationFilter@946c6b2, org.springframework.security.web.access.intercept.AuthorizationFilter@1bf94028]
+2025-06-05 15:52:15,084 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 15:52:15,095 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 15:52:15,107 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 15:52:15,113 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.673 seconds (process running for 3.989)
+2025-06-05 15:52:36,910 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05 15:52:36,910 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-05 15:52:36,911 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-05 15:52:44,742 INFO c.a.d.c.AiController [http-nio-8080-exec-4] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naqueles dias, 30querendo saber com certeza por que Paulo estava sendo acusado pelos judeus, o tribuno soltou-o e mandou reunir os chefes dos sacerdotes e todo o conselho dos anciãos. Depois fez trazer Paulo e colocou-o diante deles.,23, 6Sabendo que uma parte dos presentes eram saduceus e a outra parte eram fariseus, Paulo exclamou no conselho dos anciãos: “Irmãos, eu sou fariseu e filho de fariseus. Estou sendo julgado por causa da nossa esperança na ressurreição dos mortos”. 7Apenas falou isso, armou-se um conflito entre fariseus e saduceus, e a assembleia se dividiu. 8Com efeito, os saduceus dizem que não há ressurreição, nem anjo, nem espírito, enquanto os fariseus sustentam uma coisa e outra. 9Houve, então, uma enorme gritaria. Alguns doutores da Lei, do partido dos fariseus, levantaram-se e começaram a protestar, dizendo: “Não encontramos nenhum mal neste homem. E se um espírito ou anjo tivesse falado com ele?” 10E o conflito crescia cada vez mais. Receando que Paulo fosse despedaçado por eles, o comandante ordenou que os soldados descessem e o tirassem do meio deles, levando-o de novo para o quartel. 11Na noite seguinte, o Senhor aproximou-se de Paulo e lhe disse: “Tem confiança. Assim como tu deste testemunho de mim em Jerusalém, é preciso que tu sejas também minha testemunha em Roma”.
+2025-06-05 15:52:50,710 INFO c.a.d.c.AiController [http-nio-8080-exec-4] Reflexão gerada com sucesso
+2025-06-05 15:54:25,074 INFO c.a.d.c.AiController [http-nio-8080-exec-7] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naqueles dias, 30querendo saber com certeza por que Paulo estava sendo acusado pelos judeus, o tribuno soltou-o e mandou reunir os chefes dos sacerdotes e todo o conselho dos anciãos. Depois fez trazer Paulo e colocou-o diante deles.,23, 6Sabendo que uma parte dos presentes eram saduceus e a outra parte eram fariseus, Paulo exclamou no conselho dos anciãos: “Irmãos, eu sou fariseu e filho de fariseus. Estou sendo julgado por causa da nossa esperança na ressurreição dos mortos”. 7Apenas falou isso, armou-se um conflito entre fariseus e saduceus, e a assembleia se dividiu. 8Com efeito, os saduceus dizem que não há ressurreição, nem anjo, nem espírito, enquanto os fariseus sustentam uma coisa e outra. 9Houve, então, uma enorme gritaria. Alguns doutores da Lei, do partido dos fariseus, levantaram-se e começaram a protestar, dizendo: “Não encontramos nenhum mal neste homem. E se um espírito ou anjo tivesse falado com ele?” 10E o conflito crescia cada vez mais. Receando que Paulo fosse despedaçado por eles, o comandante ordenou que os soldados descessem e o tirassem do meio deles, levando-o de novo para o quartel. 11Na noite seguinte, o Senhor aproximou-se de Paulo e lhe disse: “Tem confiança. Assim como tu deste testemunho de mim em Jerusalém, é preciso que tu sejas também minha testemunha em Roma”.
+2025-06-05 15:54:30,023 INFO c.a.d.c.AiController [http-nio-8080-exec-7] Reflexão gerada com sucesso
+2025-06-05 15:59:10,590 INFO c.a.d.c.AiController [http-nio-8080-exec-2] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naqueles dias, 30querendo saber com certeza por que Paulo estava sendo acusado pelos judeus, o tribuno soltou-o e mandou reunir os chefes dos sacerdotes e todo o conselho dos anciãos. Depois fez trazer Paulo e colocou-o diante deles.,23, 6Sabendo que uma parte dos presentes eram saduceus e a outra parte eram fariseus, Paulo exclamou no conselho dos anciãos: “Irmãos, eu sou fariseu e filho de fariseus. Estou sendo julgado por causa da nossa esperança na ressurreição dos mortos”. 7Apenas falou isso, armou-se um conflito entre fariseus e saduceus, e a assembleia se dividiu. 8Com efeito, os saduceus dizem que não há ressurreição, nem anjo, nem espírito, enquanto os fariseus sustentam uma coisa e outra. 9Houve, então, uma enorme gritaria. Alguns doutores da Lei, do partido dos fariseus, levantaram-se e começaram a protestar, dizendo: “Não encontramos nenhum mal neste homem. E se um espírito ou anjo tivesse falado com ele?” 10E o conflito crescia cada vez mais. Receando que Paulo fosse despedaçado por eles, o comandante ordenou que os soldados descessem e o tirassem do meio deles, levando-o de novo para o quartel. 11Na noite seguinte, o Senhor aproximou-se de Paulo e lhe disse: “Tem confiança. Assim como tu deste testemunho de mim em Jerusalém, é preciso que tu sejas também minha testemunha em Roma”.
+2025-06-05 15:59:16,476 INFO c.a.d.c.AiController [http-nio-8080-exec-2] Reflexão gerada com sucesso
+2025-06-05 15:59:52,628 INFO c.a.d.c.AiController [http-nio-8080-exec-4] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naqueles dias, 30querendo saber com certeza por que Paulo estava sendo acusado pelos judeus, o tribuno soltou-o e mandou reunir os chefes dos sacerdotes e todo o conselho dos anciãos. Depois fez trazer Paulo e colocou-o diante deles.,23, 6Sabendo que uma parte dos presentes eram saduceus e a outra parte eram fariseus, Paulo exclamou no conselho dos anciãos: “Irmãos, eu sou fariseu e filho de fariseus. Estou sendo julgado por causa da nossa esperança na ressurreição dos mortos”. 7Apenas falou isso, armou-se um conflito entre fariseus e saduceus, e a assembleia se dividiu. 8Com efeito, os saduceus dizem que não há ressurreição, nem anjo, nem espírito, enquanto os fariseus sustentam uma coisa e outra. 9Houve, então, uma enorme gritaria. Alguns doutores da Lei, do partido dos fariseus, levantaram-se e começaram a protestar, dizendo: “Não encontramos nenhum mal neste homem. E se um espírito ou anjo tivesse falado com ele?” 10E o conflito crescia cada vez mais. Receando que Paulo fosse despedaçado por eles, o comandante ordenou que os soldados descessem e o tirassem do meio deles, levando-o de novo para o quartel. 11Na noite seguinte, o Senhor aproximou-se de Paulo e lhe disse: “Tem confiança. Assim como tu deste testemunho de mim em Jerusalém, é preciso que tu sejas também minha testemunha em Roma”.
+2025-06-05 15:59:57,234 INFO c.a.d.c.AiController [http-nio-8080-exec-4] Reflexão gerada com sucesso
+2025-06-05 16:02:16,505 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 16:02:16,509 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 16:02:16,510 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 16:04:30,577 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 16:04:30,607 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 11856 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 16:04:30,608 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 16:04:30,609 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 16:04:30,640 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 16:04:30,640 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 16:04:31,220 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 16:04:31,324 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 96 ms. Found 2 JPA repository interfaces.
+2025-06-05 16:04:31,758 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 16:04:31,766 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 16:04:31,767 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 16:04:31,768 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 16:04:31,803 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 16:04:31,804 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1163 ms
+2025-06-05 16:04:31,961 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 16:04:32,082 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2adb4927
+2025-06-05 16:04:32,084 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 16:04:32,103 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 16:04:32,139 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.022s)
+2025-06-05 16:04:32,181 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 16:04:32,183 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 16:04:32,245 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 16:04:32,287 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 16:04:32,313 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 16:04:32,481 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 16:04:33,111 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 16:04:33,113 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 16:04:33,332 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 16:04:33,484 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 16:04:33,659 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e850c57, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@706a24c3, org.springframework.security.web.context.SecurityContextHolderFilter@66db42a0, org.springframework.security.web.header.HeaderWriterFilter@35ae3847, org.springframework.web.filter.CorsFilter@156efa64, org.springframework.security.web.authentication.logout.LogoutFilter@7959ae1f, com.aldenor_neto.devout_catholic.config.SecurityFilter@8b834fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2eddcccc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39fbf0a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4460fff2, org.springframework.security.web.session.SessionManagementFilter@7feee4d2, org.springframework.security.web.access.ExceptionTranslationFilter@4963e256, org.springframework.security.web.access.intercept.AuthorizationFilter@64575cd8]
+2025-06-05 16:04:33,882 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 16:04:33,893 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 16:04:33,904 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 16:04:33,911 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.627 seconds (process running for 3.945)
+2025-06-05 16:05:13,782 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05 16:05:13,782 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-05 16:05:13,784 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-05 16:05:27,545 INFO c.a.d.c.AiController [http-nio-8080-exec-4] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naqueles dias, 30querendo saber com certeza por que Paulo estava sendo acusado pelos judeus, o tribuno soltou-o e mandou reunir os chefes dos sacerdotes e todo o conselho dos anciãos. Depois fez trazer Paulo e colocou-o diante deles.,23, 6Sabendo que uma parte dos presentes eram saduceus e a outra parte eram fariseus, Paulo exclamou no conselho dos anciãos: “Irmãos, eu sou fariseu e filho de fariseus. Estou sendo julgado por causa da nossa esperança na ressurreição dos mortos”. 7Apenas falou isso, armou-se um conflito entre fariseus e saduceus, e a assembleia se dividiu. 8Com efeito, os saduceus dizem que não há ressurreição, nem anjo, nem espírito, enquanto os fariseus sustentam uma coisa e outra. 9Houve, então, uma enorme gritaria. Alguns doutores da Lei, do partido dos fariseus, levantaram-se e começaram a protestar, dizendo: “Não encontramos nenhum mal neste homem. E se um espírito ou anjo tivesse falado com ele?” 10E o conflito crescia cada vez mais. Receando que Paulo fosse despedaçado por eles, o comandante ordenou que os soldados descessem e o tirassem do meio deles, levando-o de novo para o quartel. 11Na noite seguinte, o Senhor aproximou-se de Paulo e lhe disse: “Tem confiança. Assim como tu deste testemunho de mim em Jerusalém, é preciso que tu sejas também minha testemunha em Roma”.
+2025-06-05 16:05:34,009 INFO c.a.d.c.AiController [http-nio-8080-exec-4] Reflexão gerada com sucesso
+2025-06-05 16:07:25,560 INFO c.a.d.c.AiController [http-nio-8080-exec-7] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: — Guardai-me, ó Deus, porque em vós me refugio! Digo ao Senhor: “Somente vós sois meu Senhor”. Ó Senhor, sois minha herança e minha taça, meu destino está seguro em vossas mãos! 
+— Eu bendigo o Senhor, que me aconselha, e até de noite me adverte o coração. Tenho sempre o Senhor ante meus olhos, pois se o tenho a meu lado não vacilo. 
+— Eis por que meu coração está em festa, minha alma rejubila de alegria, e até meu corpo no repouso está tranquilo; pois não haveis de me deixar entregue à morte, nem vosso amigo conhecer a corrupção. 
+— Vós me ensinais vosso caminho para a vida; junto a vós, felicidade sem limites, delícia eterna e alegria ao vosso lado
+2025-06-05 16:07:29,951 INFO c.a.d.c.AiController [http-nio-8080-exec-7] Reflexão gerada com sucesso
+2025-06-05 16:09:11,058 INFO c.a.d.c.AiController [http-nio-8080-exec-2] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naquele tempo, Jesus ergueu os olhos ao céu e rezou, dizendo: 20“Pai santo, eu não te rogo somente por eles, mas também por aqueles que vão crer em mim pela sua palavra; 21para que todos sejam um como tu, Pai, estás em mim e eu em ti, e para que eles estejam em nós, a fim de que o mundo creia que tu me enviaste.22Eu dei-lhes a glória que tu me deste, para que eles sejam um, como nós somos um: 23eu neles e tu em mim, para que assim eles cheguem à unidade perfeita e o mundo reconheça que tu me enviaste e os amaste, como me amaste a mim. 24Pai, aqueles que me deste, quero que estejam comigo onde eu estiver, para que eles contemplem a minha glória, glória que tu me deste porque me amaste antes da fundação do universo. 25Pai justo, o mundo não te conheceu, mas eu te conheci, e estes também conheceram que tu me enviaste.26Eu lhes fiz conhecer o teu nome, e o tornarei conhecido ainda mais, para que o amor com que me amaste esteja neles, e eu mesmo esteja neles”.
+2025-06-05 16:09:15,316 INFO c.a.d.c.AiController [http-nio-8080-exec-2] Reflexão gerada com sucesso
+2025-06-05 16:11:40,865 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 16:11:40,867 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 16:11:40,869 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 16:13:01,277 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 16:13:01,307 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 5480 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 16:13:01,307 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 16:13:01,308 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 16:13:01,337 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 16:13:01,338 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 16:13:01,985 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 16:13:02,100 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 109 ms. Found 2 JPA repository interfaces.
+2025-06-05 16:13:02,559 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 16:13:02,567 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 16:13:02,569 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 16:13:02,569 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 16:13:02,607 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 16:13:02,608 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1269 ms
+2025-06-05 16:13:02,752 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 16:13:02,873 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@425815d5
+2025-06-05 16:13:02,874 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 16:13:02,894 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 16:13:02,930 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.022s)
+2025-06-05 16:13:02,976 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 16:13:02,978 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 16:13:03,038 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 16:13:03,079 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 16:13:03,108 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 16:13:03,274 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 16:13:03,961 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 16:13:03,964 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 16:13:04,183 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 16:13:04,338 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 16:13:04,511 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e850c57, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@706a24c3, org.springframework.security.web.context.SecurityContextHolderFilter@66db42a0, org.springframework.security.web.header.HeaderWriterFilter@35ae3847, org.springframework.web.filter.CorsFilter@156efa64, org.springframework.security.web.authentication.logout.LogoutFilter@7959ae1f, com.aldenor_neto.devout_catholic.config.SecurityFilter@8b834fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2eddcccc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39fbf0a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4460fff2, org.springframework.security.web.session.SessionManagementFilter@7feee4d2, org.springframework.security.web.access.ExceptionTranslationFilter@4963e256, org.springframework.security.web.access.intercept.AuthorizationFilter@64575cd8]
+2025-06-05 16:13:04,757 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 16:13:04,768 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 16:13:04,780 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 16:13:04,787 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.802 seconds (process running for 4.126)
+2025-06-05 16:14:33,683 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05 16:14:33,684 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-05 16:14:33,685 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-05 16:18:02,960 INFO c.a.d.c.AiController [http-nio-8080-exec-10] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Naquele tempo, Jesus ergueu os olhos ao céu e rezou, dizendo: 20“Pai santo, eu não te rogo somente por eles, mas também por aqueles que vão crer em mim pela sua palavra; 21para que todos sejam um como tu, Pai, estás em mim e eu em ti, e para que eles estejam em nós, a fim de que o mundo creia que tu me enviaste.22Eu dei-lhes a glória que tu me deste, para que eles sejam um, como nós somos um: 23eu neles e tu em mim, para que assim eles cheguem à unidade perfeita e o mundo reconheça que tu me enviaste e os amaste, como me amaste a mim. 24Pai, aqueles que me deste, quero que estejam comigo onde eu estiver, para que eles contemplem a minha glória, glória que tu me deste porque me amaste antes da fundação do universo. 25Pai justo, o mundo não te conheceu, mas eu te conheci, e estes também conheceram que tu me enviaste.26Eu lhes fiz conhecer o teu nome, e o tornarei conhecido ainda mais, para que o amor com que me amaste esteja neles, e eu mesmo esteja neles”.
+2025-06-05 16:18:08,160 INFO c.a.d.c.AiController [http-nio-8080-exec-10] Reflexão gerada com sucesso
+2025-06-05 16:18:31,254 INFO c.a.d.c.AiController [http-nio-8080-exec-2] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: — Guardai-me, ó Deus, porque em vós me refugio! Digo ao Senhor: “Somente vós sois meu Senhor”. Ó Senhor, sois minha herança e minha taça, meu destino está seguro em vossas mãos! 
+— Eu bendigo o Senhor, que me aconselha, e até de noite me adverte o coração. Tenho sempre o Senhor ante meus olhos, pois se o tenho a meu lado não vacilo. 
+— Eis por que meu coração está em festa, minha alma rejubila de alegria, e até meu corpo no repouso está tranquilo; pois não haveis de me deixar entregue à morte, nem vosso amigo conhecer a corrupção. 
+— Vós me ensinais vosso caminho para a vida; junto a vós, felicidade sem limites, delícia eterna e alegria ao vosso lado
+2025-06-05 16:18:35,374 INFO c.a.d.c.AiController [http-nio-8080-exec-2] Reflexão gerada com sucesso
+2025-06-05 16:19:48,201 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 16:19:48,203 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-06-05 16:19:48,205 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-06-05 18:40:06,307 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.1.Final
+2025-06-05 18:40:06,341 INFO o.s.b.StartupInfoLogger [restartedMain] Starting DevoutCatholicApplication using Java 21.0.1 with PID 12164 (C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic\target\classes started by alden in C:\Users\alden\Documents\Faculdade\cadeiras\7º Semestre\APS\Aplicação\V2\devout_catholic)
+2025-06-05 18:40:06,342 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-06-05 18:40:06,343 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2025-06-05 18:40:06,376 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-05 18:40:06,376 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-05 18:40:06,962 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-05 18:40:07,066 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 99 ms. Found 2 JPA repository interfaces.
+2025-06-05 18:40:07,506 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2025-06-05 18:40:07,515 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2025-06-05 18:40:07,517 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2025-06-05 18:40:07,517 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-06-05 18:40:07,553 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2025-06-05 18:40:07,554 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1176 ms
+2025-06-05 18:40:07,722 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2025-06-05 18:40:07,845 INFO c.z.h.p.HikariPool [restartedMain] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16b06858
+2025-06-05 18:40:07,846 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2025-06-05 18:40:07,867 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Database: jdbc:postgresql://localhost:5432/devoutcatholic (PostgreSQL 16.1)
+2025-06-05 18:40:07,905 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Successfully validated 2 migrations (execution time 00:00.024s)
+2025-06-05 18:40:07,947 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Current version of schema "public": 2
+2025-06-05 18:40:07,949 INFO o.f.c.i.l.s.Slf4jLog [restartedMain] Schema "public" is up to date. No migration necessary.
+2025-06-05 18:40:08,010 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-05 18:40:08,061 INFO o.h.Version [restartedMain] HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-05 18:40:08,085 INFO o.h.c.i.RegionFactoryInitiator [restartedMain] HHH000026: Second-level cache disabled
+2025-06-05 18:40:08,259 INFO o.s.o.j.p.SpringPersistenceUnitInfo [restartedMain] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-05 18:40:08,894 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-05 18:40:08,897 INFO o.s.o.j.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-05 18:40:09,117 DEBUG o.s.w.f.GenericFilterBean [restartedMain] Filter 'securityFilter' configured for use
+2025-06-05 18:40:09,276 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-05 18:40:09,457 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@162d53b8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6072ae2f, org.springframework.security.web.context.SecurityContextHolderFilter@7ee83f51, org.springframework.security.web.header.HeaderWriterFilter@381e8f2a, org.springframework.web.filter.CorsFilter@6a5eb04c, org.springframework.security.web.authentication.logout.LogoutFilter@2202c193, com.aldenor_neto.devout_catholic.config.SecurityFilter@502c8945, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a3a5a84, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51dbb2c2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2256ec19, org.springframework.security.web.session.SessionManagementFilter@4972283b, org.springframework.security.web.access.ExceptionTranslationFilter@7e511fd8, org.springframework.security.web.access.intercept.AuthorizationFilter@3d197604]
+2025-06-05 18:40:09,697 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2025-06-05 18:40:09,708 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2025-06-05 18:40:09,720 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path ''
+2025-06-05 18:40:09,727 INFO o.s.b.StartupInfoLogger [restartedMain] Started DevoutCatholicApplication in 3.736 seconds (process running for 4.087)
+2025-06-05 18:41:02,774 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-05 18:41:02,774 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-06-05 18:41:02,775 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2025-06-05 18:42:57,537 INFO c.a.d.c.AiController [http-nio-8080-exec-3] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Quando chegou o dia de Pentecostes, os discípulos estavam todos reunidos no mesmo lugar. 2De repente, veio do céu um barulho como se fosse uma forte ventania, que encheu a casa onde eles se encontravam. 3Então apareceram línguas como de fogo que se repartiram e pousaram sobre cada um deles. 4Todos ficaram cheios do Espírito Santo e começaram a falar em outras línguas, conforme o Espírito os inspirava.,5Moravam em Jerusalém judeus devotos, de todas as nações do mundo. 6Quando ouviram o barulho, juntou-se a multidão, e todos ficaram confusos, pois cada um ouvia os discípulos falar em sua própria língua.,7Cheios de espanto e admiração, diziam: “Esses homens que estão falando não são todos galileus? 8Como é que nós os escutamos na nossa própria língua? 9Nós que somos partos, medos e elamitas, habitantes da Mesopotâmia, da Judeia e da Capadócia, do Ponto e da Ásia, 10da Frígia e da Panfília, do Egito e da parte da Líbia próxima de Cirene, também romanos que aqui residem; 11judeus e prosélitos, cretenses e árabes, todos nós os escutamos anunciarem as maravilhas de Deus na nossa própria língua!”
+2025-06-05 18:43:03,010 INFO c.a.d.c.AiController [http-nio-8080-exec-3] Reflexão gerada com sucesso
+2025-06-05 19:16:19,234 INFO c.a.d.c.AiController [http-nio-8080-exec-6] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: — Bendize, ó minha alma, ao Senhor! Ó meu Deus e meu Senhor, como sois grande! Quão numerosas, ó Senhor, são vossas obras! Encheu-se a terra com as vossas criaturas! 
+— Se tirais o seu respiro, elas perecem e voltam para o pó de onde vieram. Enviais o vosso espírito e renascem e da terra toda a face renovais. 
+— Que a glória do Senhor perdure sempre, e alegre-se o Senhor em suas obras! Hoje seja-lhe agradável o meu canto, pois o Senhor é a minha grande alegria
+2025-06-05 19:16:24,131 INFO c.a.d.c.AiController [http-nio-8080-exec-6] Reflexão gerada com sucesso
+2025-06-05 19:18:26,874 INFO c.a.d.c.AiController [http-nio-8080-exec-9] Recebendo requisição para gerar reflexão. Pergunta: Qual a reflexão para o trecho bíblico: Irmãos: 3bNinguém pode dizer: Jesus é o Senhor, a não ser no Espírito Santo. 4Há diversidade de dons, mas um mesmo é o Espírito. 5Há diversidade de ministérios, mas um mesmo é o Senhor. 6Há diferentes atividades, mas um mesmo Deus que realiza todas as coisas em todos.,7A cada um é dada a manifestação do Espírito em vista do bem comum. 12Como o corpo é um, embora tenha muitos membros, e como todos os membros do corpo, embora sejam muitos, formam um só corpo, assim também acontece com Cristo. 13De fato, todos nós, judeus ou gregos, escravos ou livres, fomos batizados num único Espírito, para formarmos um único corpo, e todos nós bebemos de um único Espírito.
+2025-06-05 19:18:31,557 INFO c.a.d.c.AiController [http-nio-8080-exec-9] Reflexão gerada com sucesso

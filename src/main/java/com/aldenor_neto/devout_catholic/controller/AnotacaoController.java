@@ -23,18 +23,18 @@ public class AnotacaoController {
 
     @GetMapping
     public ResponseEntity<List<Anotacao>> getAll() {
-        return ResponseEntity.ok().body(service.findAll());
+        return ResponseEntity.ok().body(service.findAllByCurrentUser());
     }
 
     @GetMapping("{id}")
     public ResponseEntity<Anotacao> getOne(@PathVariable(value = "id") Long id) {
-        return ResponseEntity.ok().body(service.findById(id));
+        return ResponseEntity.ok().body(service.findByIdAndCurrentUser(id));
     }
 
     @PostMapping
     public ResponseEntity<Anotacao> save(@RequestBody Anotacao entity) {
         entity.setDataCriacao(LocalDateTime.now());
-        Anotacao saved = service.saveOrUpdate(entity);
+        Anotacao saved = service.saveOrUpdateForCurrentUser(entity);
         URI uri = ServletUriComponentsBuilder
                 .fromCurrentRequest()
                 .path("/{id}")
@@ -48,14 +48,14 @@ public class AnotacaoController {
         if (!Objects.equals(entity.getId(), id)) {
             return ResponseEntity.badRequest().body("Ops! Id of entity is not equals as param 'id'! :(");
         } else {
-            service.update(entity);
+            service.saveOrUpdateForCurrentUser(entity);
             return ResponseEntity.noContent().build();
         }
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<?> delete(@PathVariable("id") Long id) {
-        service.delete(service.findById(id));
+    public ResponseEntity<?> deleteAnotacao(@PathVariable(value = "id") Long id) {
+        service.deleteByIdAndCurrentUser(id);
         return ResponseEntity.noContent().build();
     }
 

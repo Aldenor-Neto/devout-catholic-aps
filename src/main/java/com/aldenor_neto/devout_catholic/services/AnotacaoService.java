@@ -5,10 +5,12 @@ import jakarta.transaction.Transactional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import com.aldenor_neto.devout_catholic.DevoutCatholicApplication;
 import com.aldenor_neto.devout_catholic.model.Anotacao;
+import com.aldenor_neto.devout_catholic.model.User;
 import com.aldenor_neto.devout_catholic.repository.AnotacaoRepository;
 
 import java.util.List;
@@ -52,5 +54,33 @@ public class AnotacaoService {
         } else {
             logger.info("Valor incorreto");
         }
+    }
+
+    public List<Anotacao> findAllByCurrentUser() {
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        return repository.findByUser(user);
+    }
+
+    public Anotacao findByIdAndCurrentUser(Long id) {
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        return repository.findById(id)
+            .filter(a -> a.getUser().getId().equals(user.getId()))
+            .orElseThrow(() -> new NoResultException("Ops! Not Found entity for this id! :("));
+    }
+
+    @Transactional
+    public Anotacao saveOrUpdateForCurrentUser(Anotacao entity) {
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        entity.setUser(user);
+        return repository.saveAndFlush(entity);
+    }
+
+    @Transactional
+    public void deleteByIdAndCurrentUser(Long id) {
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        Anotacao anotacao = repository.findById(id)
+            .filter(a -> a.getUser().getId().equals(user.getId()))
+            .orElseThrow(() -> new NoResultException("Ops! Not Found entity for this id! :("));
+        repository.delete(anotacao);
     }
 }
